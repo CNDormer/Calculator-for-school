@@ -1,5 +1,8 @@
 #calc-buttons {
   background-color: balck;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 #plus {
   color: orange;
