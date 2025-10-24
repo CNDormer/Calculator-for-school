@@ -1,3 +1,12 @@
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+textarea {
+  text-align: center;
+}
 #calc-buttons {
   background-color: balck;
   display: flex;
