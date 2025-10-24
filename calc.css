@@ -4,6 +4,9 @@
 #plus {
   color: orange;
 }
+#plus:hover {
+  color: #FFD580;
+}
 #minus {
   color: orange;
 }
