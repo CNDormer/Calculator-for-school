@@ -10,15 +10,15 @@ p {
   flex-direction: column;
   text-align: center;
 }
-#plus {
+.plus {
   color: orange;
 }
-#plus:hover {
+.plus:hover {
   color: #FFD580;
 }
-#minus {
+.minus {
   color: orange;
 }
-#left-par {
+.left-par {
   color: orange;
 }
