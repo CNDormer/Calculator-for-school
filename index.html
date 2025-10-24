@@ -12,22 +12,24 @@
     <main>
       <section id="calc-buttons">
         <input id="display" readonly>
-        <button id="plus">+</button>
-        <button id="minus">-</button>
-        <button id="left-par">(</button>
-        <button id="right-par">)</button>
-        <button id="divide">/</button>
-        <button id="multiply">×</button>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="zero">0</button>
+          <div id="buttons">
+            <button onclick="appendToDisplay('+')" class="plus">+</button>
+            <button onclick="appendToDisplay('-')" class="minus">-</button>
+            <button onclick="appendToDisplay('(')" class="left-par">(</button>
+            <button onclick="appendToDisplay(')')" class="right-par">)</button>
+            <button onclick="appendToDisplay('/')" class="divide">/</button>
+            <button onclick="appendToDisplay('×')" class="multiply">×</button>
+            <button onclick="appendToDisplay('1')" class="one">1</button>
+            <button onclick="appendToDisplay('2')" class="two">2</button>
+            <button onclick="appendToDisplay('3')" class="three">3</button>
+            <button onclick="appendToDisplay('4')" class="four">4</button>
+            <button onclick="appendToDisplay('5')" class="five">5</button>
+            <button onclick="appendToDisplay('6')" class="six">6</button>
+            <button onclick="appendToDisplay('7')" class="seven">7</button>
+            <button onclick="appendToDisplay('8')" class="eight">8</button>
+            <button onclick="appendToDisplay('9')" class="nine">9</button>
+            <button onclick="appendToDisplay('0')" class="zero">0</button>
+          </div>
       </section>
     </main>
   </body>
