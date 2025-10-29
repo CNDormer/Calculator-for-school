@@ -2,13 +2,15 @@ h1 {
   text-align: center;
 }
 p {
-  text-align: left;
+  text-align: center;
 }
 #calc-buttons {
   background-color: balck;
   display: flex;
   flex-direction: column;
   text-align: center;
+  length: 700px;
+  width: 500px;
 }
 .display {
   length: 200px;
