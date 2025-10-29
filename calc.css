@@ -5,7 +5,7 @@ p {
   text-align: center;
 }
 #calc-buttons {
-  background-color: balck;
+  background-color: black;
   display: flex;
   flex-direction: column;
   text-align: center;
