@@ -8,12 +8,13 @@ p {
   background-color: black;
   text-align: center;
   length: 700px;
-  width: 500px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 .display {
-  length: 200px;
+  length: 400px;
+  
 }
 .btn {
   width: 50px;
