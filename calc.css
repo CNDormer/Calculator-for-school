@@ -10,6 +10,10 @@ p {
   flex-direction: column;
   text-align: center;
 }
+.display {
+  length: 500px;
+  width: 200px;
+}
 .plus {
   color: orange;
 }
