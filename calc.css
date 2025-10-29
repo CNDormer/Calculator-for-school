@@ -14,15 +14,3 @@ p {
   length: 500px;
   width: 200px;
 }
-.plus {
-  color: orange;
-}
-.plus:hover {
-  color: #FFD580;
-}
-.minus {
-  color: orange;
-}
-.left-par {
-  color: orange;
-}
