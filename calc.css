@@ -2,7 +2,7 @@ h1 {
   text-align: center;
 }
 p {
-  text-align: center;
+  text-align: left;
 }
 #calc-buttons {
   background-color: balck;
@@ -11,6 +11,6 @@ p {
   text-align: center;
 }
 .display {
-  length: 500px;
+  length: 200px;
   width: 100%;
 }
