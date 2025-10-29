@@ -7,8 +7,7 @@ p {
 #calc-buttons {
   background-color: black;
   text-align: center;
-  display: flex;
-  
+  display: inline-block;
   length: 400px;
   width: 1000px;
   margin-left: auto;
