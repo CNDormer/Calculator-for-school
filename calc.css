@@ -55,10 +55,10 @@ button {
   font-size: 30px;
 }
 .fbtn:hover {
-  backdround-color: hsl(35,100%,65%);
+  background-color: hsl(35,100%,65%);
 }
 .fbtn:active {
-  backdround-color: hsl(35,100%,75%);
+  background-color: hsl(35,100%,75%);
 }
 
 .btn:hover {
