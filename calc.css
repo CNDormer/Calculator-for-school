@@ -41,7 +41,7 @@ button {
 }
 .btn {
   height: 50px;
-  width: 100px;
+  width: 75px;
   color: white;
   border: none;
   font-weight: bold;
@@ -51,7 +51,7 @@ button {
 }
 .fbtn {
   height: 50px;
-  width: 100px;
+  width: 75px;
   background-color: hsl(35,100%,55%);
   color: white;
   border: none;
