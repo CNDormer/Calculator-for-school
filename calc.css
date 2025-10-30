@@ -32,5 +32,5 @@ p {
   background-color: orange;
 }
 .fbtn:active {
-  backdround-color: #FFA500;
+  backdround-color: rgb(255, 213, 128);
 }
