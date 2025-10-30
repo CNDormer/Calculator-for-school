@@ -25,3 +25,7 @@ My computer science teacher told me this doesn't count as project for calc becau
 ### ~~For fun~~ School
   - ~~Yeah I'm not lying~~
   - Also for school
+
+# Links
+## Me
+  - [Link Text](https://github.com/CNDormer)
