@@ -22,8 +22,10 @@ p {
   gap: 20px;
 }
 #calc-buttons {
-  gap: 30px;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr)
+  gap: 10px;
+  padding: 25px;
 }
 button {
   cursor: pointer;
