@@ -15,8 +15,8 @@ p {
   margin-right: auto;
 }
 .display {
-  width: 500px;
-  height:200px;
+  width: 100%;
+  height: 200px;
 }
 .btn {
   height: 75px;
@@ -29,8 +29,8 @@ p {
   width: 75px;
   border-radius: 37.5px;
   font-size: 30px;
-  color: orange;
+  background-color: orange;
 }
 .fbtn:hover {
-  color: #FFA500;
+  backdround-color: #FFA500;
 }
