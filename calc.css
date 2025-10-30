@@ -4,7 +4,7 @@ h1 {
 p {
   text-align: center;
 }
-#calc-buttons {
+#calc {
   background-color: hsl(0,0%,10%);
   text-align: center;
   display: flex;
@@ -15,8 +15,11 @@ p {
   margin-right: auto;
   overflow: hidden;
   border-radius: 10px;
-  gap: 20px;
   max-width: 400px;
+}
+#calc-button {
+  gap: 20px;
+  padding: 20px;
 }
 button {
   cursor: pointer;
@@ -57,6 +60,6 @@ button {
 .btn:hover {
   background-color: hsl(0,0%,40%)
 }
-.btn:acvtive {
+.btn:active {
   background-color: hsl(0,0%,50%)
 }
