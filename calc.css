@@ -4,7 +4,7 @@ h1 {
 p {
   text-align: center;
 }
-#calc {
+#calculator {
   background-color: hsl(0,0%,10%);
   text-align: center;
   display: flex;
@@ -16,6 +16,7 @@ p {
   overflow: hidden;
   border-radius: 10px;
   max-width: 400px;
+  gap: 5px;
 }
 #calc-buttons {
   gap: 20px;
