@@ -13,24 +13,29 @@ p {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
 }
 .display {
-  width: 390px;
-  height: 30px;
+  width: 100%;
+  height: 60px;
 }
 .btn {
   height: 75px;
   width: 75px;
   border-radius: 37.5px;
-  font-size: 30px;
+  color: white;
 }
 .fbtn {
   height: 75px;
   width: 75px;
   border-radius: 37.5px;
-  font-size: 30px;
   background-color: orange;
+  color: white;
+}
+.fbtn:hover {
+  backdround-color: rgb(255, 213, 128);
 }
 .fbtn:active {
   backdround-color: rgb(255, 213, 128);
