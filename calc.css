@@ -33,7 +33,7 @@ button {
   height: 150px;
   text-align: left;
   border: none;
-  background-color: hsl(0,0%,30%)
+  background-color: hsl(0,0%,30%);
   color: white;
 }
 .btn {
