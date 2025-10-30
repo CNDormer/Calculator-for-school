@@ -1,6 +1,14 @@
 # Calculator for my school project
 My computer science teacher told me this doesn't count as project for calc because <br>we are using python with some ui stuff thats prebuilted.
 <br>Its not done yet
+
+### Current progress
+  - [x] HTML layout
+  - [x] CSS for buttons and layout
+  - [x] Set up JS 
+  - ~~[x] Eat~~
+  - [ ] More buttons
+  - [ ] JS funtions
 ## What will the calc have when its done
 
 ### Operators
@@ -28,4 +36,5 @@ My computer science teacher told me this doesn't count as project for calc becau
 
 # Links
 ## Me
-  - [Link Text](https://github.com/CNDormer)
+  - [Github](https://github.com/CNDormer)
+
