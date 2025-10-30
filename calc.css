@@ -40,9 +40,8 @@ button {
   font-size: 4rem;
 }
 .btn {
-  height: 75px;
+  height: 37.5px;
   width: 75px;
-  border-radius: 37.5px;
   color: white;
   border: none;
   font-weight: bold;
@@ -51,9 +50,8 @@ button {
   padding: 20px;
 }
 .fbtn {
-  height: 75px;
+  height: 37.5px;
   width: 75px;
-  border-radius: 37.5px;
   background-color: hsl(35,100%,55%);
   color: white;
   border: none;
