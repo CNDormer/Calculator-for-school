@@ -23,7 +23,7 @@ p {
 }
 #calc-buttons {
   display: inline-block;
-  gap: 20px;
+  gap: 40px;
   padding: 25px;
 }
 button {
