@@ -24,7 +24,7 @@ p {
 #calc-buttons {
   display: inline-block;
   gap: 40px;
-  padding: 40px;
+  padding: 10px;
 }
 button {
   cursor: pointer;
