@@ -22,8 +22,7 @@ p {
   gap: 20px;
 }
 #calc-buttons {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
+  display: inline-block;
   gap: 20px;
   padding: 25px;
 }
