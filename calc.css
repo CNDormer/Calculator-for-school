@@ -15,7 +15,7 @@ p {
   margin-right: auto;
   overflow: hidden;
   border-radius: 10px;
-  gap: 5px;
+  gap: 20px;
   max-width: 400px;
 }
 .display {
