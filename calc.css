@@ -13,6 +13,7 @@ p {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 .display {
   width: 390px;
