@@ -16,10 +16,12 @@ p {
   overflow: hidden;
   border-radius: 10px;
   gap: 5px;
+  max-width: 400px;
 }
 .display {
   width: 100%;
   height: 60px;
+  text-align: left;
 }
 .btn {
   height: 75px;
@@ -30,20 +32,29 @@ p {
   font-weight: bold;
   font-size: 30px;
   background-color: hsl(0,0%,30%)
+  cursor: pointer;
 }
 .fbtn {
   height: 75px;
   width: 75px;
   border-radius: 37.5px;
-  background-color: orange;
+  background-color: hsl(35,100%,55%);
   color: white;
   border: none;
   font-weight: bold;
   font-size: 30px;
+  cursor: pointer;
 }
 .fbtn:hover {
-  backdround-color: rgb(255, 213, 128);
+  backdround-color: hsl(35,100%,65%);
 }
 .fbtn:active {
-  backdround-color: rgb(255, 213, 128);
+  backdround-color: hsl(35,100%,75%);
+}
+
+.btn:hover {
+  background-color: hsl(0,0%,40%)
+}
+.btn:acvtive {
+  background-color: hsl(0,0%,50%)
 }
