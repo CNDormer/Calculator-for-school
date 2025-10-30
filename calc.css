@@ -27,6 +27,7 @@ p {
   width: 75px;
   border-radius: 37.5px;
   color: white;
+  border: none;
 }
 .fbtn {
   height: 75px;
@@ -34,6 +35,7 @@ p {
   border-radius: 37.5px;
   background-color: orange;
   color: white;
+  border: none;
 }
 .fbtn:hover {
   backdround-color: rgb(255, 213, 128);
