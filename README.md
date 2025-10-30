@@ -6,7 +6,6 @@ My computer science teacher told me this doesn't count as project for calc becau
   - [x] HTML layout
   - [x] CSS for buttons and layout
   - [x] Set up JS 
-  - ~~[x] Eat~~
   - [ ] More buttons
   - [ ] JS funtions
 ## What will the calc have when its done
