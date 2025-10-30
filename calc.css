@@ -31,6 +31,6 @@ p {
   font-size: 30px;
   background-color: orange;
 }
-.fbtn:hover {
+.fbtn:active {
   backdround-color: #FFA500;
 }
