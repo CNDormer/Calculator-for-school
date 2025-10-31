@@ -5,7 +5,7 @@ function appendToDisplay(input) {
 }
 
 function clearDisplay() {
-  display.value="0";
+  display.value="";
 }
 
 function calculate() {
