@@ -30,7 +30,7 @@ p {
 button {
   cursor: pointer;
 }
-.display {
+#display {
   width: 100%;
   height: 120px;
   text-align: left;
