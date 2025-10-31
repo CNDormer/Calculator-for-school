@@ -17,6 +17,7 @@ p {
   border-radius: 10px;
   max-width: 400px;
   gap: 20px;
+  font-family: Arial, sans-serif;
 }
 #calc-buttons {
   display: inline-block;
