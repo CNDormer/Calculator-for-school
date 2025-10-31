@@ -5,7 +5,7 @@ My computer science teacher told me this doesn't count as project for calc becau
 
 
 > [!IMPORTANT]
-> This project is hosting on [This link](https://cndormer.github.io/Calculator-for-school/)
+> This project is hosting on [This link](https://cndormer.github.io/Calculator-for-school/)<br>
 > This calc is still in early-developement.
 
 ### Current progress
