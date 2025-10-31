@@ -49,6 +49,7 @@ button {
   background-color: hsl(0,0%,30%);
   padding: 20px;
   border-radius: 5px;
+  margin: 5px;
 }
 .fbtn {
   height: 50px;
@@ -60,6 +61,7 @@ button {
   font-size: 16px;
   padding: 20px;
   border-radius: 5px;
+  margin: 5px;
 }
 .fbtn:hover {
   background-color: hsl(35,100%,65%);
