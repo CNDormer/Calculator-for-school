@@ -11,3 +11,7 @@ function clearDisplay() {
 function calculate() {
 
 }
+
+function squareRoot(input) {
+  
+}
