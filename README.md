@@ -27,6 +27,7 @@ My computer science teacher told me this doesn't count as project for calc becau
   - Its not gonna turn into a website with database just a calc
   - the ui currently looks like squres because I missed something on there that makes it looks like that and I don't know how to change it
     > I'm just lazy
+    > nvm squares are better
 ### Some special Elements in there
   - Like I mentioned, sin,cos,tan that and I'm adding
 ### When will it be done
