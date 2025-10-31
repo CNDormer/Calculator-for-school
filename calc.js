@@ -1,7 +1,7 @@
 const display=document.getElementById("display")
 
 function appendToDisplay(input) {
-  display.valuen += input;
+  display.value += input;
 }
 
 function clearDisplay() {
