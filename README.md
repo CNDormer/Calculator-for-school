@@ -5,7 +5,7 @@ My computer science teacher told me this doesn't count as project for calc becau
 
 
 > [!IMPORTANT]
-> This project is hosting on [This link](https://cndormer.github.io/Calculator-for-school/)<br>
+> Please put the code in VS code to make it work,i tried on VS code with live server it worked perfectly, on git hub it doesn't work at all<br>
 > This calc is still in early-developement.
 
 ### Current progress
@@ -46,4 +46,5 @@ My computer science teacher told me this doesn't count as project for calc becau
 # Links
 ## Me
   - [Github](https://github.com/CNDormer)
-
+## VS code link
+  - [VS code](https://code.visualstudio.com/)
