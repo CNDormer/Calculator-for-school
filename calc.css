@@ -1,10 +1,8 @@
-body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
 }
 #calculator {
   background-color: hsl(0,0%,20%);
