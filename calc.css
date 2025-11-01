@@ -27,15 +27,18 @@ p {
 button {
   cursor: pointer;
 }
-#display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
-    border: none;
-    background-color: hsl(0, 0%, 20%);
-    color: white;
+#display {
+  width: 100%;
+  height: 120px;
+  text-align: left;
+  border: none;
+  background-color: hsl(0,0%,30%);
+  color: white;
+  font-size: 3rem;
+  padding: 10px;
+  box-sizing: border-box;
 }
+
 
 }
 .btn {
