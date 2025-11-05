@@ -9,23 +9,24 @@ function appendToDisplay(input) {
         clearvalue = false;
     }
 
-    if (display.value === "" && /[+\-*/^]/.test(input)) {
-        display.value = "0" + input;
-        clearvalue = false;
-        return;
-    }
-
     if (clearvalue) {
         if (/[0-9.]/.test(input)) {
-            display.value = input;
+            if (/[+\-*/^]/.test(lastChar)) {
+                display.value += input;
+            } else {
+                display.value = input;
+            }
             clearvalue = false;
             return;
-        }
-        if (/[+\-*/^]/.test(input)) {
-            display.value = "0" + input;
+        } 
+        else if (/[+\-*/^()]/.test(input)) {
             clearvalue = false;
-            return;
         }
+    }
+
+    if (display.value === "" && /[+\-*/^]/.test(input)) {
+        display.value = "0" + input;
+        return;
     }
 
     if (/[+\-*/^]/.test(input)) {
@@ -33,10 +34,14 @@ function appendToDisplay(input) {
             display.value += input;
         }
     } 
+    else if (/[()]/.test(input)) {
+        display.value += input;
+    } 
     else {
         display.value += input;
     }
 }
+
 
 
 
