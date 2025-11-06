@@ -22,7 +22,7 @@ My computer science teacher told me this doesn't count as project for calc becau
   - sin,cos,tan,and inverse
   - more[^1]
 
-[^1]This kind of means the buttons that are like logarithm,algebra 2 type.
+[^1]: This kind of means the buttons that are like logarithm,algebra 2 type.
 ### Better ui
   - I'm going to update the ui at some point
   - its not gonna be so fancy
