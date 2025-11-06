@@ -1,13 +1,14 @@
 # Calculator for my school project
 My computer science teacher told me this doesn't count as project for calc because <br>we are using python with some ui stuff thats prebuilted.
-<br>Its not done yet
 
 
 
 > [!IMPORTANT]
-> Please put the code in VS code to make it work,i tried on VS code with live server it worked perfectly, on git hub it doesn't work at all<br>
 > This calc is still in early-developement.
 
+> [!NOTE]
+> Remind me to do the trig function in JS if you see this
+> 
 ### Current progress
   - [x] HTML layout
   - [x] CSS for buttons and layout
@@ -19,14 +20,16 @@ My computer science teacher told me this doesn't count as project for calc becau
 ### Operators
   - Simple ones
   - sin,cos,tan,and inverse
-  - more
+  - more[^1]
+
+[^1]This kind of means the buttons that are like logarithm,algebra 2 type.
 ### Better ui
   - I'm going to update the ui at some point
   - its not gonna be so fancy
   - I might add something more than that
   - Its not gonna turn into a website with database just a calc
   - the ui currently looks like squres because I missed something on there that makes it looks like that and I don't know how to change it
-    > I'm just lazy
+    > I'm just lazy<br>
     > nvm squares are better
 ### Some special Elements in there
   - Like I mentioned, sin,cos,tan that and I'm adding
