@@ -51,14 +51,48 @@ function clearDisplay(){
     clearvalue=false;
 }
 
-function calculate(){
-    try{
-        display.value = eval(display.value);
-        clearvalue=true;
-    }
-    catch(error){
+function calculate() {
+    const maxDigit=12;
+    try {
+        let expression = display.value;
+
+        if (expression.includes("√")) {
+            expression = expression.replace(/√\(/g, "Math.sqrt(");
+            expression = expression.replace(/(\d)(Math\.sqrt)/g, "$1*$2");
+            expression = expression.replace(/\)(Math\.sqrt)/g, ")*$1");
+        }
+        expression = expression.replace(/(\d)\(/g, "$1*(");
+        expression = expression.replace(/\)(\d)/g, ")*$1");
+        expression = expression.replace(/([0-9.]+)\(/g, "$1*(");
+
+        let result = eval(expression);
+        if (typeof result === "number") {
+            const formatted = result.toPrecision(10);
+            display.value = parseFloat(formatted).toString();
+        } else {
+            display.value = result;
+        }
+        clearvalue = true;
+
+    } catch (error) {
         display.value = "Error";
-        clearvalue=true
+        clearvalue = true;
     }
 }
-/* Add /[0-9.]+/g with replace element for multiplycation and somthing else*/
+
+function squareRoot() {
+    if (display.value === "Error") {
+        display.value = "";
+        clearvalue = false;
+    } else {
+        const lastChar = display.value.slice(-1);
+
+        if (/\d|\)/.test(lastChar)) {
+            display.value += "√(";
+        } else {
+            display.value += "√(";
+        }
+
+        clearvalue = false;
+    }
+}
