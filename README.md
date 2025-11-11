@@ -12,14 +12,15 @@ My computer science teacher told me this doesn't count as project for calc becau
 ### Current progress
   - [x] HTML layout
   - [x] CSS for buttons and layout
-  - [x] Set up JS 
+  - [x] Set up JS
+  - [x] Trig
   - [ ] More buttons
   - [ ] JS funtions
 ## What will the calc have when its done
 
 ### Operators
   - Simple ones
-  - sin,cos,tan,and inverse
+  - sin,cos,tan,and inverse(done)
   - more[^1]
 
 [^1]: This kind of means the buttons that are like logarithm,algebra 2 type.
