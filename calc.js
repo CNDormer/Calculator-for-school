@@ -64,7 +64,9 @@ function calculate() {
         expression = expression.replace(/(\d)\(/g, "$1*(");
         expression = expression.replace(/\)(\d)/g, ")*$1");
         expression = expression.replace(/([0-9.]+)\(/g, "$1*(");
-
+        expression = expression.replace(/sin\(/g, "Math.sin(Math.PI/180*");
+        expression = expression.replace(/cos\(/g, "Math.cos(Math.PI/180*");
+        expression = expression.replace(/tan\(/g, "Math.tan(Math.PI/180*");
         let result = eval(expression);
         if (typeof result === "number") {
             const formatted = result.toPrecision(10);
@@ -91,6 +93,57 @@ function squareRoot() {
             display.value += "√(";
         } else {
             display.value += "√(";
+        }
+
+        clearvalue = false;
+    }
+}
+
+function trigCalculateSin(){
+    if (display.value === "Error") {
+        display.value = "";
+        clearvalue = false;
+    } else {
+        const lastChar = display.value.slice(-1);
+
+        if (/\d|\)/.test(lastChar)) {
+            display.value +="sin(";
+        } else {
+            display.value +="sin(";
+        }
+
+        clearvalue = false;
+    }
+}
+
+function trigCalculateCos(){
+    if (display.value === "Error") {
+        display.value = "";
+        clearvalue = false;
+    } else {
+        const lastChar = display.value.slice(-1);
+
+        if (/\d|\)/.test(lastChar)) {
+            display.value +="cos(";
+        } else {
+            display.value +="cos(";
+        }
+
+        clearvalue = false;
+    }
+}
+
+function trigCalculateTan(){
+    if (display.value === "Error") {
+        display.value = "";
+        clearvalue = false;
+    } else {
+        const lastChar = display.value.slice(-1);
+
+        if (/\d|\)/.test(lastChar)) {
+            display.value +="tan(";
+        } else {
+            display.value +="tan(";
         }
 
         clearvalue = false;
