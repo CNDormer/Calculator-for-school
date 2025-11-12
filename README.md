@@ -4,7 +4,8 @@ My computer science teacher told me this doesn't count as project for calc becau
 
 
 > [!IMPORTANT]
-> This calc is still in early-developement.
+> This calc is still in early-developement.<br>
+> Oh and when using negative number it will always show 0-1 i believe until i fixed it
 
 > [!NOTE]
 > Remind me to do the trig function in JS if you see this
