@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <title>Calculator</title>
-      <link rel="stylesheet" href="calc.css">
+      <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <h1>This is a calculator</h1>
@@ -29,15 +29,23 @@
               <button onclick="appendToDisplay('+')" class="fbtn">+</button>
               <button onclick="appendToDisplay('-')" class="fbtn">-</button>
               <button onclick="appendToDisplay('/')" class="fbtn">/</button>
-              <button onclick="appendToDisplay('*')" class="fbtn">×</button>
+              <button onclick="appendToDisplay('*')" class="fbtn">*</button>
               <button onclick="appendToDisplay('.')" class="fbtn">.</button>
-              <button onclick="appendToDisplay('**')" class="fbtn">^</button>
+              <button onclick="appendToDisplay('^')" class="fbtn">x²</button>
               <button onclick="appendToDisplay('(')" class="fbtn">(</button>
               <button onclick="appendToDisplay(')')" class="fbtn">)</button>
               <button onclick="squareRoot()" class="fbtn">√</button>
-              <button onclick="trigCalculate('sin')" class="fbtn">sin</button>
-              <button onclick="trigCalculate('cos')" class="fbtn">cos</button>
-              <button onclick="trigCalculate('tan')" class="fbtn">tan</button>
+              <button onclick="trigCalculateSin()" class="fbtn">sin</button>
+              <button onclick="trigCalculateCos()" class="fbtn">cos</button>
+              <button onclick="trigCalculateTan()" class="fbtn">tan</button>
+              <button onclick="logFunction()" class="fbtn">log</button>
+              <button onclick="lnFunction()" class="fbtn">ln</button>
+              <button onclick="piFunction()" class="fbtn">π</button>
+              <button onclick="eulerFunction()" class="fbtn">𝑒</button>
+              <button onclick="piButThreeDigits()" class="fbtn">π-3</button>
+              <button onclick="sNotation()" class="fbtn">E</button>
+              <button onclick="factorialNumber()" class="fbtn">!</button>
+              <button onclick="cubeRoot()" class="fbtn">∛</button>
             </div>
           </div>
       </div>
