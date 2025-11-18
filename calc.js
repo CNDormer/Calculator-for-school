@@ -4,7 +4,7 @@ let clearvalue = false;
 function appendToDisplay(input) {
     const lastChar = display.value.slice(-1);
 
-    if (display.value === "Error") {
+    if (display.value === "Error" || display.value === "Invalid Factorial")  {
         display.value = "";
         clearvalue = false;
     }
@@ -24,7 +24,7 @@ function appendToDisplay(input) {
         }
     }
 
-    if (display.value === "" && /[+\-*/^]/.test(input)) {
+    if (display.value === "" && /[+\*/^]/.test(input)) {
         display.value = "0" + input;
         return;
     }
@@ -50,6 +50,21 @@ function clearDisplay() {
 function calculate() {
     try {
         let expression = display.value;
+        if (expression === "Invalid Factorial") {
+            display.value = "";
+            clearvalue = false;
+            return;
+        }
+        if (/\d+\.\d+!/.test(expression)) {
+            display.value = "Invalid Factorial";
+            clearvalue = true;
+            return;
+        }
+        if (expression.match(/-?\d+(\.\d+)?!/)) {
+            display.value = "Invalid Factorial";
+            clearvalue = true;
+        return;
+}
 
         if (expression.startsWith("!")) {
             display.value = "Error";
@@ -69,6 +84,7 @@ function calculate() {
         });
 
         expression = expression.replace(/√\(/g, "Math.sqrt(");
+        expression = expression.replace(/∛\(/g, "Math.cbrt(");
         expression = expression.replace(/sin\(/g, "Math.sin(Math.PI/180*");
         expression = expression.replace(/cos\(/g, "Math.cos(Math.PI/180*");
         expression = expression.replace(/tan\(/g, "Math.tan(Math.PI/180*");
@@ -99,7 +115,15 @@ function calculate() {
         expression = expression.replace(/\^/g, "**");
 
         expression = expression.replace(/log10\*\(/g, "log10(");
+        expression = expression.replace(/(\-?\d+(\.\d+)?|\([^()]+\))!/g, (match, number) => {
+            let num = number.replace(/[()]/g, "");
 
+            if (!Number.isInteger(parseFloat(num)) || parseFloat(num) < 0) {
+                return "0";
+            }
+            return `factorial(${num})`;
+        });
+        
         console.log("Evaluating:", expression);
 
         let result = eval(expression);
@@ -123,76 +147,81 @@ function calculate() {
 
 
 function squareRoot() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error" || display.value === "Invalid Factorial") display.value = "";
     display.value += "√(";
     clearvalue = false;
 }
 
 function trigCalculateSin() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error" || display.value === "Invalid Factorial") display.value = "";
     display.value += "sin(";
     clearvalue = false;
 }
 
 function trigCalculateCos() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error" || display.value === "Invalid Factorial") display.value = "";
     display.value += "cos(";
     clearvalue = false;
 }
 
 function trigCalculateTan() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error" || display.value === "Invalid Factorial") display.value = "";
     display.value += "tan(";
     clearvalue = false;
 }
 
 function logFunction() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error" || display.value === "Invalid Factorial") display.value = "";
     display.value += "log(";
     clearvalue = false;
 }
 
 function lnFunction() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error" || display.value === "Invalid Factorial") display.value = "";
     display.value += "ln(";
     clearvalue = false;
 }
 
 function piFunction() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error"|| display.value === "Invalid Factorial") display.value = "";
     display.value += "π";
     clearvalue = false;
 }
 
 function eulerFunction() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error"|| display.value === "Invalid Factorial") display.value = "";
     display.value += "𝑒";
     clearvalue = false;
 }
 
 function piButThreeDigits() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error"|| display.value === "Invalid Factorial") display.value = "";
     display.value += "Π";
     clearvalue = false;
 }
 
 function sNotation() {
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error"|| display.value === "Invalid Factorial") display.value = "";
     display.value += "E";
     clearvalue = false;
 }
 
 function factorialNumber(){
-    if (display.value === "Error") display.value = "";
+    if (display.value === "Error"|| display.value === "Invalid Factorial") display.value = "";
     display.value += "!";
     clearvalue = false;
 }
 
 function factorial(n){
-    if (n < 0) return NaN;
-    if (!Number.isInteger(n)) return NaN;
+    if (n < 0) return "Invalid Factorial";
+    if (!Number.isInteger(n)) return "Invalid Factorial";
     if (n === 0 || n === 1) return 1;
     let result = 1;
     for (let i = 2; i <= n; i++) result *= i;
     return result;
+}
+function cubeRoot(){
+    if (display.value === "Error"|| display.value === "Invalid Factorial") display.value = "";
+    display.value += "∛(";
+    clearvalue = false;
 }
