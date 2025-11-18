@@ -6,9 +6,6 @@ My computer science teacher told me this doesn't count as project for calc becau
 > [!IMPORTANT]
 > This calc is still in early-developement.<br>
 
-> [!NOTE]
-> Remind me to do the trig function in JS if you see this
-> 
 ### Current progress
   - [x] HTML layout
   - [x] CSS for buttons and layout
