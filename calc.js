@@ -55,16 +55,26 @@ function calculate() {
             clearvalue = false;
             return;
         }
-        if (/\d+\.\d+!/.test(expression)) {
+        let invalidFactorialFound = false;
+
+        expression = expression.replace(/(-?\d+(\.\d+)?|\([^()]+\))!/g, (match, number) => {
+        let num = number.replace(/[()]/g, "");
+        num = parseFloat(num);
+
+        
+        if (num < 0 || !Number.isInteger(num)) {
+            invalidFactorialFound = true;
+            return "0"
+        }
+
+        return `factorial(${num})`;
+        });
+        if (invalidFactorialFound) {
             display.value = "Invalid Factorial";
             clearvalue = true;
             return;
         }
-        if (expression.match(/-?\d+(\.\d+)?!/)) {
-            display.value = "Invalid Factorial";
-            clearvalue = true;
-        return;
-}
+
 
         if (expression.startsWith("!")) {
             display.value = "Error";
@@ -213,8 +223,8 @@ function factorialNumber(){
 }
 
 function factorial(n){
-    if (n < 0) return "Invalid Factorial";
-    if (!Number.isInteger(n)) return "Invalid Factorial";
+    if (n < 0) return undefined;
+    if (!Number.isInteger(n)) return undefined;
     if (n === 0 || n === 1) return 1;
     let result = 1;
     for (let i = 2; i <= n; i++) result *= i;
