@@ -4,6 +4,9 @@ h1 {
 p {
     text-align: center;
 }
+hr {
+  color: orangered;
+}
 #calculator {
   background-color: hsl(0,0%,20%);
   text-align: center;
@@ -65,14 +68,18 @@ button {
 }
 .fbtn:hover {
   background-color: hsl(35,100%,65%);
+  transition: background-color 0.3s ease;
 }
 .fbtn:active {
   background-color: hsl(35,100%,75%);
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: hsl(0,0%,40%);
+  transition: background-color 0.3s ease;
 }
 .btn:active {
   background-color: hsl(0,0%,50%);
+  transition: background-color 0.3s ease;
 }
