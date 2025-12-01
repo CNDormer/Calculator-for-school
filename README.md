@@ -11,8 +11,8 @@ My computer science teacher told me this doesn't count as project for calc becau
   - [x] CSS for buttons and layout
   - [x] Set up JS
   - [x] Trig
-  - [x] euler
-  - [ ] More buttons
+  - [x] More buttons
+  - [ ] Decoration
 ## What will the calc have when its done
 
 ### Operators
